@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import func_index, class_index
+from task3.views import cooking, pie, soup
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', func_index),
     path('class/', class_index.as_view()),
+    path('cooking/', cooking),
+    path('cooking/pie/', pie),
+    path('cooking/soup/', soup),
 ]
