@@ -1,0 +1,10 @@
+{% extends "fourth_task/menu.html" %}
+{% block title %}
+{% endblock %}
+{% block content %}
+<ul>
+    {% for i in pies.values %}
+    <li>{{i}} <button>рецепт</button></li>
+    {% endfor %}
+</ul>
+{% endblock %}
